@@ -1,0 +1,53 @@
+{
+    // fichier de configuration pour le débogage PHP
+    // https://code.visualstudio.com/docs/editor/debugging
+    // https://xdebug.org/docs/step_debug
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🌐 Listen for XDebug (Serveur Web)",
+            "type": "php",
+            "request": "launch",
+            "port": 9003,
+            "xdebugSettings": {
+                "max_children": 100,
+                "max_data": 1024,
+                "max_depth": 3
+            }
+        },
+        {
+            "name": "🚀 Launch application (index.php)",
+            "type": "php",
+            "request": "launch",
+            "program": "${workspaceFolder}/site/index.php",
+            "cwd": "${workspaceFolder}/site",
+            "port": 9000,
+            "env": {
+                "XDEBUG_MODE": "debug",
+                "XDEBUG_SESSION": "1"
+            }
+        },
+        {
+            "name": "📄 Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9000,
+            "env": {
+                "XDEBUG_MODE": "debug",
+                "XDEBUG_SESSION": "1"
+            }
+        },
+        {
+            "name": "🚫 Launch without XDebug",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "env": {
+                "XDEBUG_MODE": "off"
+            }
+        }
+    ]
+}

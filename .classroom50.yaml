@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "sio2-slam-2026-2027"
+assignment: "b2-api-rest"
+owner:
+  username: "AlexandreDala"
+  id: 232307424
+  accepted_at: "2026-09-15T12:47:27Z"
+source:
+  owner: "taccary"
+  owner_id: 34951152
+  repo: "API-REST-oceane"
+  branch: "main"

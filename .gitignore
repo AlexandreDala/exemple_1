@@ -1,0 +1,13 @@
+# Documentation générée et cache par phpDocumentor
+documentation/generated
+documentation/cache
+
+# Préserver les dossiers importants même vides
+!site/
+!tests/
+
+# Autres fichiers à ignorer
+.phpdoc
+.phpunit.cache
+vendor
+
